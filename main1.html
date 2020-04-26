@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <input id="someText" type="text">
+        <button id="myButton">Click me to change text</button>
+        <p id="oldText">It's April 25</p>
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function(){
+                let newText="";
+                newText=document.getElementById("someText").value;
+                document.getElementById("oldText").innerHTML = newText;
+            }
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
