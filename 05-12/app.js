@@ -1,12 +1,23 @@
 //start the timer immediately after the page loads
 
 let start = new Date().getTime();
+//creating a random color
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split("");
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 function makeShapeAppear(){
     let top = Math.random() * 400;
     let left = Math.random() * 400;
     let width = Math.random() * 400;
     let height = Math.random() * 400;
+    //changing a background color of a shape
+    document.getElementById("shape").style.backgroundColor = getRandomColor();
     //making shape appear randomly vertically and horizonally by adding margins
     document.getElementById("shape").style.top = top + "px";
     document.getElementById("shape").style.left = left + "px";

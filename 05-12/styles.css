@@ -7,4 +7,5 @@
     height: 200px;
     background-color: red;
     display: none;
+    position: relative;
 }
